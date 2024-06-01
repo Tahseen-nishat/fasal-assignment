@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div id="loginForm" class="form">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginSubmit">Login</button>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+        </div>
+
+        <div id="signupForm" class="form hidden">
+            <h2>Sign Up</h2>
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button id="signupSubmit">Sign In</button>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+
+    <nav class="navbar hidden">
+        <h1>Let's find Movies Here.....!</h1>
+        <div class="search_bar">
+            <input type="text" placeholder="Enter movie name" id="name">
+            <button id="search">Search</button>
+        </div>
+    </nav>
+
+    <div class="card hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

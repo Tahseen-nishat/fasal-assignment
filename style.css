@@ -1,0 +1,230 @@
+/* Existing CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vmax 1vmax;
+    background-color: rgb(4, 17, 23);
+    width: 100%;
+    height: 6vmax;
+    margin-top: -19vmax;
+}
+
+nav h1 {
+    color: white;
+    padding-left: 2vmax;
+}
+
+.search_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#name {
+    font-size: 1rem;
+    padding: 0.75vmax;
+    border-radius: 9px;
+    border: none;
+    font-weight: lighter;
+    width: 20vmax;
+}
+
+#search {
+    font-size: 1rem;
+    padding: 0.75vmax;
+    border-radius: 9px;
+    border: none;
+    background-color: rgb(0, 132, 119);
+    color: aliceblue;
+}
+
+#search:hover {
+    background-color: rgb(12, 231, 209);
+    cursor: pointer;
+}
+
+.moviecard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(160, 214, 214);
+    padding: 25px;
+    border-radius: 15px;
+    margin: auto;
+    gap: 2.75rem;
+    width: 55vmax;
+}
+
+.moviecard .disc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moviecard .disc h1 {
+    text-align: center;
+    margin-bottom: 1.5vmax;
+}
+
+.moviecard .disc #head,
+#genere {
+    text-align: center;
+    margin-bottom: 1.10vmax;
+}
+
+.moviecard .disc #genere {
+    background-color: rgb(0, 132, 119);
+    color: aliceblue;
+    height: 1.05rem;
+    width: 27rem;
+    padding: 0.5rem;
+}
+
+.moviecard .disc p {
+    margin-bottom: 1.5vmax;
+}
+
+.moviecard .disc p {
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px) {
+    .moviecard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: block;
+        height: 120px;
+    }
+
+    .search_bar {
+        display: flex;
+        justify-content: center;
+        margin-top: 21px;
+    }
+
+    nav h1 {
+        text-align: center;
+        position: relative;
+        top: 7px;
+    }
+
+    .moviecard {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .search_bar input {
+        width: 50%;
+    }
+
+    .search_bar button {
+        margin-inline: 3px;
+        font-size: 15px;
+    }
+
+    .moviecard img {
+        width: 90%;
+    }
+
+    .moviecard .disc #genere {
+        width: 80%;
+    }
+}
+
+#auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10vh;
+    margin-top: 15vmax;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar.hidden, .card.hidden {
+    display: none;
+}
+
+#loginSubmit,#signupSubmit{
+    font-size: 1rem;
+    padding: 0.75vmax;
+    border-radius: 9px;
+    border: none;
+    background-color: rgb(0, 132, 119);
+    color: aliceblue;
+    margin: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#loginForm p{
+    margin-top: 1.5vmax;
+}
+#loginSubmit:hover{
+    background-color: rgb(12, 231, 209);
+    cursor: pointer;
+    color: black;
+    font-weight:bolder;
+}
+
+#signupSubmit:hover{
+    background-color: rgb(12, 231, 209);
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+#loginForm h2,input,button{
+    margin-top: 1.5vmax;
+    margin-bottom: 1.5vmax;
+}
+#signupForm h2,input,input,button,p{
+    margin-top: 1.5vmax;
+    margin-bottom: 1.5vmax;
+}
+
